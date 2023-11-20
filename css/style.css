@@ -1,0 +1,178 @@
+/* Общие стили */
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  line-height: 1.25;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+  color: #444;
+}
+
+/* Стили для ссылок */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00aaff;
+}
+
+/* Стили для шапки сайта */
+header {
+  background: rgba(255, 255, 255, 0.70);
+  backdrop-filter: blur(20px);
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.bg-header{
+  height: 48px;
+}
+
+.navbar {
+  max-width: 940px;
+  margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar-brand {
+  color: #1D1D1F;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0px;
+}
+
+.nav-link {
+  color: #313135;
+  font-size: 13px;
+  padding: 0px;
+}
+
+/* Стили для основного содержимого */
+main {
+  padding: 0px 0px;
+}
+
+.frame-1 {
+  background: #006adb;
+}
+
+.phone-border{
+  margin-top: -892px;
+}
+
+.phone-ui {
+  margin-top: -55px;
+  border-radius: 48px;
+}
+
+.info {
+  padding: 12px;
+  max-width: 940px;
+  padding-bottom: 135px;
+}
+
+.info-title {
+  margin-bottom: 35px;
+}
+
+@media (max-width: 576px) {
+  .brand-title {
+    font-size: 5rem;
+    padding-top: 5rem;
+  }
+
+  .info-title {
+    font-size: 60px;
+    padding-top: 5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .brand-title {
+    font-size: 100px;
+    padding-top: 5rem;
+  }
+
+  .info-title {
+    font-size: 60px;
+    padding-top: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .brand-title {
+    font-size: 140px;
+    padding-top: 5rem;
+  }
+
+  .info-title {
+    font-size: 85px;
+    padding-top: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .brand-title {
+    font-size: 185px;
+    padding-top: 5rem;
+  }
+
+  .info-title {
+    font-size: 115px;
+    padding-top: 50px;
+  }
+}
+
+.info-paragraph {
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.black-btn {
+  border-radius: 40px;
+  background: #1D1D1F;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+  padding: 12px 40px;
+}
+
+.frame-2 {
+  background: #121316;
+}
+
+.sec-info-cards {
+  width: 575px;
+  height: 525px;
+}
+
+.frame-2.card {
+  background: #191A1D;
+}
+
+.card-view {
+  padding: 105px;
+  max-width: 995px;
+}
+
+.card {
+  max-width: 475px;
+  border-radius: 25px;
+  background: #191A1D;
+  color: #fff;
+}
+
+/* Стили для подвала сайта */
+footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  padding: 20px 0;
+  text-align: center;
+}
