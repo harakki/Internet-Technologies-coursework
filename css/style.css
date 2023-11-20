@@ -61,13 +61,9 @@ main {
   background: #006adb;
 }
 
-.phone-border{
-  margin-top: -892px;
-}
-
-.phone-ui {
-  margin-top: -55px;
-  border-radius: 48px;
+.phone-ui{
+  margin-top: -80px;
+  max-width: 400px;
 }
 
 .info {
@@ -126,6 +122,14 @@ main {
     font-size: 115px;
     padding-top: 50px;
   }
+
+  .card-view {
+    width: 950px;
+  }
+
+  .card {
+    max-width: 450px;
+  }
 }
 
 .info-paragraph {
@@ -157,16 +161,67 @@ main {
   background: #191A1D;
 }
 
+.col {
+  padding-left: 0px;  
+}
+
+.card-body {
+  padding: 0px;
+}
+
 .card-view {
-  padding: 105px;
-  max-width: 995px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  /* padding-left: 105px; */
+  max-width: 1130px;
 }
 
 .card {
-  max-width: 475px;
+  /* max-width: 450px; */
+  /* max-height: 420px; */
+  /* min-width: 450px; */
   border-radius: 25px;
   background: #191A1D;
   color: #fff;
+  padding: 46px 46px 46px 66px;
+  margin-left: 10px;
+}
+
+.card-title {
+  color: #FFF;
+  font-weight: 500;
+  font-size: 38px;
+  text-align: left;
+}
+
+.card-1 {
+  max-width: 210px;
+  /* margin-top: 35px;
+  margin-left: -90px; */
+  margin-bottom: -46px;
+  padding-top: 30px;
+}
+
+.card-2 {
+  max-width: 300px;
+  /* margin-top: 60px;
+  margin-bottom: 30px; */
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.card-3 {
+  max-height: 350px;
+  margin-top: -168px;
+  /* margin-right: -337px; */
+  margin-left: 200px;
+  /* margin-top: -150px; */
+}
+
+.card-4 {
+  max-height: 300px;
+  margin-top: -168px;
+  margin-left: 200px;
 }
 
 /* Стили для подвала сайта */
