@@ -313,7 +313,7 @@ footer {
   padding-bottom: 70px;
 }
 
-.ftr-jmp-list-h {
+.footer-jmplist-header {
   color: #000;
   font-size: 16px;
 }
@@ -323,46 +323,39 @@ footer {
   border-bottom: 1px solid #929299;
 }
 
+/* Стили блока юр. информации */
+
 .copyright-block {
   padding: 0px;
   padding-top: 3px;
-  padding-bottom: 3px;
-  font-weight: 400;
-}
-
-.copyright {
   font-size: 13px;
-  margin: 0;
+  font-weight: 400;
   color: #626266;
-  line-height: 1.4;
 }
 
 .copyright-eula {
   display: inline-block;
-  margin-left: 30px;
+  cursor: pointer;
 }
 
-.copyright-eula-first {
-  margin-left: 0;
-}
-
-.br-c-p {
+.copyright-breakpoint {
+  margin: 0;
   padding-left: 5px;
   padding-right: 5px;
   font-weight: 900;
 }
 
-.reg-selector {
+.region-selector {
   color: #007BFF;
+  cursor: pointer;
 }
+
+/* Блок поддерживаемых платформ */
 
 .supported-platforms-bg {
   background-image: url(../img/bg-sup-platforms.png);
   background-repeat: no-repeat;
   background-position: left top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   resize: none;
 }
@@ -404,6 +397,8 @@ footer {
   font-weight: 600;
 }
 
+/* Блок других приложений */
+
 .more-apps {
   padding-top: 80px;
 }
@@ -444,6 +439,8 @@ footer {
     padding-bottom: 75px;
   }
 }
+
+/* Блок подписки на новостную рассылку */
 
 .newseller-bg {
   background-color: #141414;
@@ -489,6 +486,27 @@ footer {
   display: block;
 }
 
+.animated-object {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.animated-object.show {
+  transform: translateY(10px);
+  opacity: 1;
+}
+
+@media (max-width: 420px) {
+  .email-form {
+    width: 300px;
+  }
+}
+
+@media (max-width: 818px) {
+  .email-form {
+    width: 250px;
+  }
+}
+
 .email-error {
   color: red;
   padding-top: 5px;
@@ -509,6 +527,7 @@ footer {
   font-weight: 400;
   padding-left: 20px;
   padding-right: 20px;
+  border-radius: 50px;
 }
 
 .in-dev-placeholder-btn:hover {
@@ -557,5 +576,44 @@ footer {
 }
 
 .functionality {
-
+  max-width: 960px;
 }
+
+.functions-phone {
+  margin: 0;
+}
+
+.functions-title {
+  padding-top: 40px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #000;
+}
+
+.functions-paragraph {
+  font-size: 20px;
+  font-weight: 500;
+  color: #666;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.func-block {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.func-block-scnd {
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+:root {
+  --scroll: 0;
+}
+
+/* .phone-f1 {
+  position: sticky;
+  top: -40%;
+  translate: 0 calc(-1% * (max(var(--scroll), 25) - 25) * 100 / 75);
+} */

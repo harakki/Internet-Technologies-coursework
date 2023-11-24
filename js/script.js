@@ -1,11 +1,22 @@
+window.addEventListener("scroll", setScrollVar)
+window.addEventListener("resize", setScrollVar)
+
+function setScrollVar() {
+    const html_element = document.documentElement
+    const percentOfScreenHeightScrolled = html_element.scrrollTop / html_element.clientHeight
+    html_element.style.setProperty("--scroll", Math.min(percentOfScreenHeightScrolled * 100, 100))
+}
+
+setScrollVar()
+
 function startConfetti() {
     // const button = document.querySelector('#confetti');
     const canvas = document.querySelector('#confetti-canvas');
 
-    const jsConfetti = new JSConfetti()
+    const сonfetti = new Confetti()
 
     // button.addEventListener('click', () => {
-        jsConfetti.addConfetti({
+        сConfetti.addConfetti({
             confettiRadius: 6,
             confettiNumber: 1000,       
         })
