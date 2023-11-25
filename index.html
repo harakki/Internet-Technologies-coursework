@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <title>DocSphere - Документы в кармане</title>
-  <link rel="icon" href="/img/ico.png" type="image/x-icon">
-  <!-- Required meta tags -->
+  <link rel="icon" href="./img/ico.png" type="image/x-icon">
+  <!-- Обязательные мета-теги -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS v5.3.2 -->
-  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5.3.2 -->
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -51,13 +51,17 @@
 
   <main>
 
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+
     <div class="bg-header"></div>
 
     <div class="frame-1" id="f1">
       <div class="container text-center">
         <h1 class="text-white brand-title">DocSphere</h1>
         <div class="phone-f1 animated-object">
-          <img src="/img/ui-1.png" class="phone-ui img-fluid d-block mx-auto" alt="спасите-помогите css душнила">
+          <img src="./img/ui-1.png" class="phone-ui img-fluid d-block mx-auto" alt="спасите-помогите css душнила">
         </div>
 
         <div class="container info">
@@ -79,7 +83,7 @@
               <div class="card-body">
                 <h5 class="card-title"><span style="color: #007BFF;">AES-256.</span> Безопасность заложена в ДНК.</h5>
               </div>
-              <img src="/img/card-1.svg" class="img-fluid float-start card-1" alt="...">
+              <img src="./img/card-1.svg" class="img-fluid float-start card-1" alt="...">
             </div>
           </div>
           <div class="col">
@@ -87,7 +91,7 @@
               <div class="card-body">
                 <h5 class="card-title"><span style="color: #007BFF;">Цифровая подпись.</span> Ключ к Вашей жизни.</h5>
               </div>
-              <img src="/img/card-2.svg" class="img-fluid mx-auto card-2" alt="...">
+              <img src="./img/card-2.svg" class="img-fluid mx-auto card-2" alt="...">
             </div>
           </div>
           <div class="col">
@@ -96,7 +100,7 @@
                 <h5 class="card-title"><span style="color: #007BFF;">Приватность.</span> Данными владеете <br>только Вы.
                 </h5>
               </div>
-              <img src="/img/card-3.svg" class="img-fluid card-3" alt="...">
+              <img src="./img/card-3.svg" class="img-fluid card-3" alt="...">
             </div>
           </div>
           <div class="col">
@@ -105,55 +109,61 @@
                 <h5 class="card-title"><span style="color: #007BFF;">Лицо — ваш ключ ко всему.</span> Пусть так и
                   останется.</h5>
               </div>
-              <img src="/img/card-4.svg" class="img-fluid card-4" alt="...">
+              <img src="./img/card-4.svg" class="img-fluid card-4" alt="...">
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="frame-3" id="f3">
+    <div class="frame-3 slider-frame" id="f3">
       <div class="container text-center functionality">
 
         <div class="row row-cols-1 row-cols-md-2 mx-auto align-items-center func-block">
           <div class="col">
-            <img src="/img/ui-1.png" class="phone-ui img-fluid functions-phone" alt="спасите-помогите css душнила">
+            <img src="./img/ui-1.png" class="phone-ui img-fluid functions-phone" alt="спасите-помогите css душнила">
           </div>
 
           <div class="col">
             <div class="container-fluid">
               <h1 class="functions-title text-md-start">Отправляйте за секунды.</h1>
-              <p class="fs-3 functions-paragraph text-md-start">DocSphere позволит Вам отправлять данные из личного хранилища без необходимости поиска его в различных файлах. Достаточно выбрать нужный файл, затем “Поделиться”.</p>
+              <p class="fs-3 functions-paragraph text-md-start">DocSphere позволит Вам отправлять данные из личного
+                хранилища без необходимости поиска его в различных файлах. Достаточно выбрать нужный файл, затем
+                “Поделиться”.</p>
               <button class="btn btn-primary in-dev-placeholder-btn float-md-start ">Подробнее</button>
             </div>
           </div>
-          
+
         </div>
 
       </div>
     </div>
 
-    <div class="frame-4" id="f4">
+    <div class="frame-4 slider-frame" id="f4">
       <div class="container text-center functionality">
 
         <div class="row row-cols-1 row-cols-md-2 mx-auto align-items-center func-block func-block-scnd">
           <div class="col">
-            <img src="/img/ui-1.png" class="phone-ui img-fluid functions-phone" alt="спасите-помогите css душнила">
+            <img src="./img/ui-1.png" class="phone-ui img-fluid functions-phone" alt="спасите-помогите css душнила">
           </div>
 
           <div class="col">
             <div class="container-fluid">
               <h1 class="functions-title text-md-start">Заполняйте, не беспокоясь об ошибках.</h1>
-              <p class="fs-3 functions-paragraph text-md-start">DocSphere и автозаполнение оптимизируют процесс заполнения защищенной информации, такой, как пароли и данные из документов. От Вас ничего не требуется — все работает автоматически.</p>
+              <p class="fs-3 functions-paragraph text-md-start">DocSphere и автозаполнение оптимизируют процесс
+                заполнения защищенной информации, такой, как пароли и данные из документов. От Вас ничего не требуется —
+                все работает автоматически.</p>
               <button class="btn btn-primary in-dev-placeholder-btn float-md-start ">Подробнее</button>
             </div>
           </div>
-          
+
         </div>
 
       </div>
     </div>
 
+
+    <!-- Пустой блок -->
     <div class="frame-5" id="f5">
       <div class="container">
 
@@ -166,13 +176,13 @@
 
           <div class="box-sup-platf-tile">
             <div class="color-box-sup-platf-tile">
-              <p class="text-white-c sup-platf-title">DocSphere доступен на этих системах.</p>
+              <p class="text-white-c sup-platf-title fadeIn">DocSphere доступен на этих системах.</p>
             </div>
           </div>
 
           <div class="box-sup-platf-tile box-sup-platf-p">
             <div class="color-box-sup-platf-tile">
-              <p class="text-white-c sup-platf-p">
+              <p class="text-white-c sup-platf-p fadeIn">
                 Windows<br>
                 macOS<br>
                 Linux<br>
@@ -200,7 +210,7 @@
           <div class="card app-card h-100 mx-auto">
             <div class="card-body text-center">
               <h5 class="card-title text-black text-center">В разработке</h5>
-              <p class="placeholder-glow placeholder-more-apps">
+              <p class="placeholder-glow placeholder-more-apps" id="c11">
                 <span class="placeholder col-4 in-dev-placeholder"></span>
                 <span class="placeholder col-4 in-dev-placeholder"></span>
                 <span class="placeholder col-3 in-dev-placeholder"></span>
@@ -214,15 +224,18 @@
                 <span class="placeholder col-2 in-dev-placeholder"></span>
                 <span class="placeholder col-4 in-dev-placeholder"></span>
               </p>
-              <a class="btn btn-primary in-dev-placeholder-btn" aria-disabled="false"
-                style="border-radius: 50px;">Подробнее</a>
+              <p class="placeholder-glow placeholder-more-apps placeholder-hided" id="c12">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat architecto sunt totam.
+              </p>
+              <a class="btn btn-primary in-dev-placeholder-btn" aria-disabled="false" id="buttonMoreApps1"
+                onclick="clickMoreAppsButtonl()" style="border-radius: 50px;">Подробнее</a>
             </div>
           </div>
 
           <div class="card app-card h-100 mx-auto">
             <div class="card-body text-center">
               <h5 class="card-title text-black text-center">В разработке</h5>
-              <p class="placeholder-glow placeholder-more-apps">
+              <p class="placeholder-glow placeholder-more-apps" id="c13">
                 <span class="placeholder col-4 in-dev-placeholder"></span>
                 <span class="placeholder col-4 in-dev-placeholder"></span>
                 <span class="placeholder col-3 in-dev-placeholder"></span>
@@ -236,15 +249,18 @@
                 <span class="placeholder col-2 in-dev-placeholder"></span>
                 <span class="placeholder col-4 in-dev-placeholder"></span>
               </p>
-              <a class="btn btn-primary in-dev-placeholder-btn" aria-disabled="false"
-                style="border-radius: 50px;">Подробнее</a>
+              <p class="placeholder-glow placeholder-more-apps placeholder-hided" id="c14">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat architecto sunt totam.
+              </p>
+              <a class="btn btn-primary in-dev-placeholder-btn" aria-disabled="false" id="buttonMoreApps2"
+                onclick="clickMoreAppsButtonc()" style="border-radius: 50px;">Подробнее</a>
             </div>
           </div>
 
           <div class="card app-card h-100 mx-auto">
             <div class="card-body text-center">
               <h5 class="card-title text-black text-center">В разработке</h5>
-              <p class="placeholder-glow placeholder-more-apps">
+              <p class="placeholder-glow placeholder-more-apps" id="c15">
                 <span class="placeholder col-4 in-dev-placeholder"></span>
                 <span class="placeholder col-4 in-dev-placeholder"></span>
                 <span class="placeholder col-3 in-dev-placeholder"></span>
@@ -258,8 +274,11 @@
                 <span class="placeholder col-2 in-dev-placeholder"></span>
                 <span class="placeholder col-4 in-dev-placeholder"></span>
               </p>
-              <a class="btn btn-primary in-dev-placeholder-btn" aria-disabled="false"
-                style="border-radius: 50px;">Подробнее</a>
+              <p class="placeholder-glow placeholder-more-apps placeholder-hided" id="c16">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat architecto sunt totam.
+              </p>
+              <a class="btn btn-primary in-dev-placeholder-btn" aria-disabled="false" id="buttonMoreApps3"
+                onclick="clickMoreAppsButtonr()" style="border-radius: 50px;">Подробнее</a>
             </div>
           </div>
 
@@ -330,6 +349,9 @@
               <a class="nav-link disabled" aria-current="page" href="#">Часто задаваемые вопросы</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="https://ozon.ru/t/J5eArp7">Подарите плюш Аянами Рей</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link disabled" href="#">Руководство</a>
             </li>
             <li class="nav-item">
@@ -347,7 +369,10 @@
               <a class="nav-link" aria-current="page" href="https://t.me/helize/">Telegram</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">ВКонтакте</a>
+              <a class="nav-link" href="https://vk.com/harra">ВКонтакте</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/harakki/Internet-Technologies-coursework">GitHub</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Instagram</a>
@@ -382,14 +407,15 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript-библиотеки Bootstrap -->
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Additional Libraries -->
-  
-  <!-- Custom JavaScript -->
-  <script src="js/script.js"></script>
-  <script src="js/confetti.js"></script>
+  <!-- Дополнительные библиотеки -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script> -->
+
+  <!-- Пользовельск. JavaScript -->
+  <script src="./js/script.js"></script>
+  <script src="./js/confetti.js"></script>
 </body>
 
 </html>

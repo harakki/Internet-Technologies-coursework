@@ -1,4 +1,8 @@
-/* Общие стили */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Общие стили CSS */
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   line-height: 1.25;
@@ -323,7 +327,7 @@ footer {
   border-bottom: 1px solid #929299;
 }
 
-/* Стили блока юр. информации */
+/* Стили блока юридической информации */
 
 .copyright-block {
   padding: 0px;
@@ -612,8 +616,56 @@ footer {
   --scroll: 0;
 }
 
+/* Попытка в комплексные анимации */
+
 /* .phone-f1 {
   position: sticky;
   top: -40%;
   translate: 0 calc(-1% * (max(var(--scroll), 25) - 25) * 100 / 75);
 } */
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+  0% {transform: rotate(0deg)};
+  100% {transform: rotate(360deg)};
+}
+
+.placeholder-hided {
+  display: none;
+  font-size: 20px;
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

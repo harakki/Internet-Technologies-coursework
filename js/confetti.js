@@ -1,6 +1,8 @@
+// Конструктор объекта
 var JSConfetti = function() {
-    "use strict";
+    "use strict"; // строгий режим
 
+    // t, e, i - создание классов и проверка типов
     function t(t, e) {
         if (!(t instanceof e)) throw new TypeError("Cannot call a class as a function")
     }
@@ -16,24 +18,32 @@ var JSConfetti = function() {
         return i && e(t.prototype, i), n && e(t, n), t
     }
 
+    // Преобразование строки с единицей измерения в число
     function n(t) {
         return +t.replace(/px/, "")
     }
 
+    // Генератор случайного числа в диапазоне с определенным количеством знаков после запятой
     function s(t, e) {
         var i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0,
             n = Math.random() * (e - t) + t;
         return Math.floor(n * Math.pow(10, i)) / Math.pow(10, i)
     }
 
+    // Возврат стучайного элемента из массива
     function o(t) {
         return t[s(0, t.length)]
     }
+
+    // Массив доступных цветов для конфетти
     var a = ["#fcf403", "#62fc03", "#f4fc03", "#03e7fc", "#03fca5", "#a503fc", "#fc03ad", "#fc03c2"];
 
+    // Логарифм t по основанию 1920
     function r(t) {
         return Math.log(t) / Math.log(1920)
     }
+
+    // Класс представления конфетти
     var h = function() {
         function e(i) {
             t(this, e);
@@ -62,6 +72,7 @@ var JSConfetti = function() {
             this.currentPosition = Object.assign({}, p), this.initialPosition = Object.assign({}, p), this.color = u.length ? null : o(c), this.emoji = u.length ? o(u) : null, this.createdAt = (new Date).getTime(), this.direction = a
         }
         return i(e, [{
+            // Отрисовка частицы
             key: "draw",
             value: function(t) {
                 var e = this.currentPosition,
@@ -95,11 +106,13 @@ var JSConfetti = function() {
         }]), e
     }();
 
+    // Создание холста фиксированного размера и положения
     function c() {
         var t = document.createElement("canvas");
         return t.style.position = "fixed", t.style.width = "100%", t.style.height = "100%", t.style.top = "0", t.style.left = "0", t.style.zIndex = "1000", t.style.pointerEvents = "none", document.body.appendChild(t), t
     }
 
+    // Проеобразования параметров с учетом устаревших аргументов
     function u(t) {
         var e = t.confettiRadius,
             i = void 0 === e ? 6 : e,
@@ -119,6 +132,10 @@ var JSConfetti = function() {
             emojiSize: l
         }
     }
+
+    // Класс контроля над группой конфетти
+    // Создание объекта jsConfetti (интерфейс для работы с анимацией)
+    // Создание и добавление в пакеты объектов из запросов на добавление конфетти
     var l = function() {
         function e(i) {
             var n = this;
@@ -132,13 +149,13 @@ var JSConfetti = function() {
                 return this.promise
             }
         }, {
-            key: "addShapes",
+            key: "addShapes", // Добавление конфетти
             value: function() {
                 var t;
                 (t = this.shapes).push.apply(t, arguments)
             }
         }, {
-            key: "complete",
+            key: "complete", // animation
             value: function() {
                 var t;
                 return !this.shapes.length && (null === (t = this.resolvePromise) || void 0 === t || t.call(this), !0)
@@ -161,7 +178,7 @@ var JSConfetti = function() {
             t(this, e), this.activeConfettiBatches = [], this.canvas = i.canvas || c(), this.canvasContext = this.canvas.getContext("2d"), this.requestAnimationFrameRequested = !1, this.lastUpdated = (new Date).getTime(), this.iterationIndex = 0, this.loop = this.loop.bind(this), requestAnimationFrame(this.loop)
         }
         return i(e, [{
-            key: "loop",
+            key: "loop", // Цикл, отрисовывающий конфети
             value: function() {
                 var t, e, i, s, o;
                 this.requestAnimationFrameRequested = !1, t = this.canvas, e = window.devicePixelRatio, i = getComputedStyle(t), s = n(i.getPropertyValue("width")), o = n(i.getPropertyValue("height")), t.setAttribute("width", (s * e).toString()), t.setAttribute("height", (o * e).toString());
@@ -177,12 +194,12 @@ var JSConfetti = function() {
                 })), this.iterationIndex++, this.queueAnimationFrameIfNeeded(a)
             }
         }, {
-            key: "queueAnimationFrameIfNeeded",
+            key: "queueAnimationFrameIfNeeded", // Проверка необходимости следующего кадра анимации
             value: function(t) {
                 this.requestAnimationFrameRequested || this.activeConfettiBatches.length < 1 || (this.requestAnimationFrameRequested = !0, this.lastUpdated = t || (new Date).getTime(), requestAnimationFrame(this.loop))
             }
         }, {
-            key: "addConfetti",
+            key: "addConfetti", // Добавление конфетти
             value: function() {
                 for (var t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, e = u(t), i = e.confettiRadius, n = e.confettiNumber, s = e.confettiColors, o = e.emojis, a = e.emojiSize, r = this.canvas.getBoundingClientRect(), c = r.width, d = r.height, f = 5 * d / 7, m = {
                         x: 0,
